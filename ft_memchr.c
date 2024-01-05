@@ -6,7 +6,7 @@
 /*   By: mjadid <mjadid@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/10 11:55:54 by rchallie          #+#    #+#             */
-/*   Updated: 2023/12/14 22:38:40 by mjadid           ###   ########.fr       */
+/*   Updated: 2024/01/06 00:26:57 by mjadid           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		if (p[i] == ( char )c )
+		if (p[i] == (char)c)
 			return ((void *)(s + i));
 		i++;
 	}

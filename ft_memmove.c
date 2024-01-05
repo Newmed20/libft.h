@@ -6,7 +6,7 @@
 /*   By: mjadid <mjadid@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 03:09:58 by mjadid            #+#    #+#             */
-/*   Updated: 2023/12/13 21:16:33 by mjadid           ###   ########.fr       */
+/*   Updated: 2024/01/06 00:30:44 by mjadid           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 	char	*s;
 
 	d = (char *)dst;
-	s = (char  *)src;
-	if(dst == NULL && src == NULL)
+	s = (char *)src;
+	if (dst == NULL && src == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
 	if (s > d)
 	{
@@ -37,4 +37,3 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-
