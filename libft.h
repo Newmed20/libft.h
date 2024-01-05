@@ -6,12 +6,12 @@
 /*   By: mjadid <mjadid@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 03:10:12 by mjadid            #+#    #+#             */
-/*   Updated: 2024/01/04 18:38:28 by mjadid           ###   ########.fr       */
+/*   Updated: 2024/01/05 23:30:26 by mjadid           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
-# define LIBFT_H
+#define LIBFT_H
 
 # include <stddef.h>
 # include <stdio.h>
@@ -35,6 +35,7 @@ void	*ft_memset(void *b, int c, size_t len);
 void	*ft_memchr(const void *s, int c, size_t n);
 void *ft_calloc(size_t count, size_t size);
 void	ft_bzero(void *s, size_t n);
+void    ft_striteri(char *s, void (*f)(unsigned int,char*));
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlen(const char *s);
@@ -46,5 +47,9 @@ char *ft_substr(char const *s, unsigned int start, size_t len);
 char *ft_strjoin(char const *s1, char const *s2);
 char *ft_strtrim(char const *s1, char const *set);
 char **ft_split(char const *s, char c);
+char *ft_itoa(int n);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+
+
 
 #endif
