@@ -6,7 +6,7 @@
 #    By: mjadid <mjadid@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/12 03:10:16 by mjadid            #+#    #+#              #
-#    Updated: 2024/01/05 23:57:24 by mjadid           ###   ########.fr        #
+#    Updated: 2024/01/06 23:11:18 by mjadid           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ OBJECTS=${CFILES:.c=.o}
 
 CFLAGS = -Wall -Wextra -Werror 
 
-NAME = libft.a
+NAME = libft.a 
 
 all: $(NAME)
 
@@ -38,5 +38,5 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
-
-.PHONY:  all clean fclean re
+ 
+.PHONY:  all re fclean clean

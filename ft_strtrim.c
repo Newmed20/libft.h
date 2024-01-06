@@ -6,7 +6,7 @@
 /*   By: mjadid <mjadid@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 10:02:49 by mjadid            #+#    #+#             */
-/*   Updated: 2023/12/30 02:02:18 by mjadid           ###   ########.fr       */
+/*   Updated: 2024/01/06 01:01:01 by mjadid           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char			*trimmed;
 
 	start = ft_start(s1, set);
-	if (!s1)
+	if (!s1 || !set)
 		return (NULL);
 	if (!set)
 		return (ft_strdup(s1));
