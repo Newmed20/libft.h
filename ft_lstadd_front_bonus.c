@@ -1,16 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mjadid <mjadid@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/06 03:50:46 by mjadid            #+#    #+#             */
-/*   Updated: 2024/01/07 23:28:10 by mjadid           ###   ########.fr       */
+/*   Created: 2024/01/07 23:09:38 by mjadid            #+#    #+#             */
+/*   Updated: 2024/01/07 23:18:54 by mjadid           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+#include "libft.h"
+
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
+	if (!lst || !new)
+		return ;
+	new->next = *lst;
+	*lst = new;
 }

@@ -1,39 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mjadid <mjadid@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/06 00:35:32 by mjadid            #+#    #+#             */
-/*   Updated: 2024/01/08 07:53:24 by mjadid           ###   ########.fr       */
+/*   Created: 2024/01/08 05:33:50 by mjadid            #+#    #+#             */
+/*   Updated: 2024/01/08 08:14:27 by mjadid           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	size_t	i;
-	size_t	j;
+	t_list	*temp;
+	t_list	*head;
+	t_list	*temp1;
 
-	if (needle[0] == '\0')
-		return ((char *)haystack);
-	if (haystack == NULL && len == 0)
+	if (!lst || !f || !del)
 		return (NULL);
-	i = 0;
-	while (haystack[i] != '\0')
+	head = NULL;
+	while (lst)
 	{
-		j = 0;
-		while (haystack[i + j] == needle[j] && i + j < len)
+		temp1 = f(lst->content);
+		temp = ft_lstnew(temp1);
+		if (!temp)
 		{
-			if (needle[j + 1] == '\0')
-				return ((char *)&haystack[i]);
-			if (haystack[i + j + 1] != needle[j + 1])
-				break ;
-			j++;
+			del(temp1);
+			ft_lstclear(&head, del);
+			return (NULL);
 		}
-		i++;
+		ft_lstadd_back(&head, temp);
+		lst = lst->next;
 	}
-	return (NULL);
+	return (head);
 }

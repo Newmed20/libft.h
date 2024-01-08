@@ -1,39 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mjadid <mjadid@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/06 00:35:32 by mjadid            #+#    #+#             */
-/*   Updated: 2024/01/08 07:53:24 by mjadid           ###   ########.fr       */
+/*   Created: 2024/01/07 23:04:27 by mjadid            #+#    #+#             */
+/*   Updated: 2024/01/07 23:06:58 by mjadid           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+t_list	*ft_lstnew(void *content)
 {
-	size_t	i;
-	size_t	j;
+	t_list	*new;
 
-	if (needle[0] == '\0')
-		return ((char *)haystack);
-	if (haystack == NULL && len == 0)
+	new = (t_list *)malloc(sizeof(t_list));
+	if (!new)
 		return (NULL);
-	i = 0;
-	while (haystack[i] != '\0')
-	{
-		j = 0;
-		while (haystack[i + j] == needle[j] && i + j < len)
-		{
-			if (needle[j + 1] == '\0')
-				return ((char *)&haystack[i]);
-			if (haystack[i + j + 1] != needle[j + 1])
-				break ;
-			j++;
-		}
-		i++;
-	}
-	return (NULL);
+	new->content = content;
+	new->next = NULL;
+	return (new);
 }
