@@ -6,9 +6,11 @@
 /*   By: mjadid <mjadid@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 14:08:28 by mjadid            #+#    #+#             */
-/*   Updated: 2023/12/19 14:08:29 by mjadid           ###   ########.fr       */
+/*   Updated: 2024/01/09 02:07:34 by mjadid           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

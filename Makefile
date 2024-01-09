@@ -6,7 +6,7 @@
 #    By: mjadid <mjadid@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/12 03:10:16 by mjadid            #+#    #+#              #
-#    Updated: 2024/01/08 07:01:20 by mjadid           ###   ########.fr        #
+#    Updated: 2024/01/09 04:58:30 by mjadid           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,14 +30,18 @@ CFLAGS = -Wall -Wextra -Werror
 
 NAME = libft.a 
 
+HEADER = libft.h
+
 all: $(NAME)
 
-$(NAME):	$(OBJECTS)
-	ar rcs $(NAME) $(OBJECTS)
-
-bonus:	${BOBJECTS} $(NAME)
-	ar rcs $(NAME) $(BOBJECTS)
+%.o : %.c $(HEADER)
+	$(CC) $(CFLAGS) -c $< -o $@
 	
+$(NAME):	$(OBJECTS)
+	ar -rcs $(NAME) $(OBJECTS)
+
+bonus:	${BOBJECTS}
+	ar -rcs $(NAME) $(BOBJECTS)
 clean:
 	rm -f $(OBJECTS) $(BOBJECTS)
 

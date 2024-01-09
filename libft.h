@@ -6,15 +6,13 @@
 /*   By: mjadid <mjadid@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 03:10:12 by mjadid            #+#    #+#             */
-/*   Updated: 2024/01/08 05:22:53 by mjadid           ###   ########.fr       */
+/*   Updated: 2024/01/09 04:59:42 by mjadid           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stddef.h>
-# include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
