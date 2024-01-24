@@ -25,22 +25,22 @@ As you can see from the [Project instructions][1], there are 4 sections:
 3.  **Bonus Functions:** Functions 42 deems will be useful for linked list manipulation
 4.  **Personal Functions:** Functions I believe will be useful later. [Documented here][3].
 
-Libc functions | Additional functions | Bonus Functions | 
-:----------- | :-----------: | :-----------: | -----------:
-memset		| ft_memalloc	| ft_lstnew		| 
-bzero		| ft_memdel		| ft_lstdelone	| 
-memcpy		| ft_strnew		| ft_lstdel		| 
-memccpy		| ft_strdel		| ft_lstadd		| 
-memmove		| ft_strclr		| ft_lstiter	| 
-memchr		| ft_striter	| ft_lstmap		| 
-memcmp		| ft_striteri	|				| 
-strlen		| ft_strmap		|				| 
-strdup		| ft_strmapi	|				| 
-strcpy		| ft_strequ		|				| 
-strncpy		| ft_strnequ	|			|
-strcat		| ft_strsub		| | ft_intlen
-strlcat		| ft_strjoin	| | ft_strendswith
-strchr		| ft_strtrim	| | ft_pathjoin
+Libc functions  | Additional functions | Bonus Functions | 
+:-----------    | :-----------:        | :-----------:   | 
+memset		| ft_memalloc	       | ft_lstnew       | 
+bzero		| ft_memdel	       | ft_lstdelone	 | 
+memcpy		| ft_strnew	       | ft_lstdel       | 
+memccpy		| ft_strdel	       | ft_lstadd	 | 
+memmove		| ft_strclr	       | ft_lstiter	 | 
+memchr		| ft_striter	       | ft_lstmap       | 
+memcmp		| ft_striteri	       |
+strlen		| ft_strmap            |
+strdup		| ft_strmapi	       |
+strcpy		| ft_strequ	       |
+strncpy		| ft_strnequ	       |
+strcat		| ft_strsub	       |
+strlcat		| ft_strjoin	       |
+strchr		| ft_strtrim	       |
 strrchr		| ft_strsplit	| | ft_lstaddback
 strstr		| ft_itoa		| | get_next_line
 strnstr		| ft_putchar	| | ft_putnstr
