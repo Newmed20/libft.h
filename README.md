@@ -41,19 +41,19 @@ strncpy		| ft_strnequ	       |
 strcat		| ft_strsub	       |
 strlcat		| ft_strjoin	       |
 strchr		| ft_strtrim	       |
-strrchr		| ft_strsplit	| | ft_lstaddback
-strstr		| ft_itoa		| | get_next_line
-strnstr		| ft_putchar	| | ft_putnstr
-strcmp		| ft_putstr		| | ft_strreplace
-strncmp		| ft_putendl	| | ft_isemptystr
-atoi		| ft_putnbr		| | ft_strsplitall
-isalpha		| ft_putchar_fd	| | ft_countwordsall
-isdigit		| ft_putstr_fd	| | ft_freestrarr
-isalnum		| ft_putendl_fd	| | ft_strjoincl
-isascii		| ft_putnbr_fd	| | ft_strjoinchcl
-isprint		|| | ft_count2darray
-toupper		| | | ft_strarrmax
-tolower		| | | ft_get_parent_path
+strrchr		| ft_strsplit	       |
+strstr		| ft_itoa	       |
+strnstr		| ft_putchar	       |
+strcmp		| ft_putstr	       |
+strncmp		| ft_putendl	       |
+atoi		| ft_putnbr	       |
+isalpha		| ft_putchar_fd	       |
+isdigit		| ft_putstr_fd	       |
+isalnum		| ft_putendl_fd	       |
+isascii		| ft_putnbr_fd	       |
+isprint		|
+toupper		|
+tolower		|
 
 
 Notes:
