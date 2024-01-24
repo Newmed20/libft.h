@@ -6,7 +6,7 @@
 /*   By: mjadid <mjadid@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 03:10:12 by mjadid            #+#    #+#             */
-/*   Updated: 2024/01/09 04:59:42 by mjadid           ###   ########.fr       */
+/*   Updated: 2024/01/23 13:06:08 by mjadid           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define LIBFT_H
 
 # include <stdlib.h>
-# include <string.h>
 # include <unistd.h>
 
 int					ft_atoi(const char *str);

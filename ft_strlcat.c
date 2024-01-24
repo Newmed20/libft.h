@@ -6,7 +6,7 @@
 /*   By: mjadid <mjadid@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/08 19:44:36 by mjadid            #+#    #+#             */
-/*   Updated: 2024/01/06 00:32:27 by mjadid           ###   ########.fr       */
+/*   Updated: 2024/01/20 15:17:58 by mjadid           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 
 	slen = ft_strlen(src);
 	j = 0;
+	if (!dst && dstsize == 0)
+		return (slen);
 	dlen = ft_strlen(dst);
 	i = dlen;
 	if (dstsize <= dlen)
